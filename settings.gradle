@@ -20,6 +20,8 @@ dependencyResolutionManagement {
             library('junit', 'junit:junit:4.13.2')
             library('androidxJunit', 'androidx.test.ext:junit:1.1.5')
             library('espressoCore', 'androidx.test.espresso:espresso-core:3.5.1')
+            library('hiltAndroid', 'com.google.dagger:hilt-android:2.44')
+            library('hiltCompiler', 'com.google.dagger:hilt-compiler:2.44')
         }
     }
 }
