@@ -22,8 +22,13 @@ dependencyResolutionManagement {
             library('espressoCore', 'androidx.test.espresso:espresso-core:3.5.1')
             library('hiltAndroid', 'com.google.dagger:hilt-android:2.44')
             library('hiltCompiler', 'com.google.dagger:hilt-compiler:2.44')
+            library('retrofit', 'com.squareup.retrofit2:retrofit:2.9.0')
+            library('okhttp', 'com.squareup.okhttp3:okhttp:4.10.0')
+            library('kotlinSerializationConverter', 'com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0')
+            library('kotlinSerializationJson', 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1')
         }
     }
 }
 rootProject.name = "NewsDemo"
 include ':app'
+include ':core:network'

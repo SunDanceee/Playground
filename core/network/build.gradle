@@ -1,22 +1,19 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.dagger.hilt.android'
     id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.example.newsdemo'
+    namespace 'com.example.network'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.newsdemo"
         minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -32,20 +29,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    // Allow references to generated code
-    kapt {
-        correctErrorTypes true
-    }
 }
 
 dependencies {
     implementation(libs.coreKtx)
-    implementation(libs.appcompat)
-    implementation(libs.constraintLayout)
-    implementation(libs.material)
     implementation(libs.retrofit)
+    implementation(libs.okhttp)
+    implementation(libs.kotlinSerializationConverter)
+    implementation(libs.kotlinSerializationJson)
     implementation(libs.hiltAndroid)
-    implementation project(path: ':core:network')
     kapt(libs.hiltCompiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidxJunit)
