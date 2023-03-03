@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.newsdemo'
+    namespace 'com.example.playground'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.newsdemo"
+        applicationId "com.example.playground"
         minSdk 24
         targetSdk 33
         versionCode 1

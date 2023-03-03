@@ -1,4 +1,4 @@
-package com.example.newsdemo
+package com.example.playground
 
 import org.junit.Test
 

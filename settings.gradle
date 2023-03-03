@@ -34,6 +34,6 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "NewsDemo"
+rootProject.name = "Playground"
 include ':app'
 include ':core:network'

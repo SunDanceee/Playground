@@ -1,7 +1,7 @@
-package com.example.newsdemo
+package com.example.playground
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class NewsApp : Application()
+class PlaygroundApp : Application()
