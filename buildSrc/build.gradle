@@ -1,0 +1,4 @@
+plugins {
+    // enabling precompiled script plugins
+    id 'groovy-gradle-plugin'
+}
