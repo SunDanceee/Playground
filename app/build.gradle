@@ -17,6 +17,14 @@ android {
     kapt {
         correctErrorTypes true
     }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.2"
+    }
 }
 
 dependencies {
@@ -28,6 +36,10 @@ dependencies {
     implementation(libs.activityKtx)
     implementation(libs.hiltAndroid)
     kapt(libs.hiltCompiler)
+    implementation(platform(libs.composeBom))
+    implementation(libs.composeMaterial)
+    implementation(libs.composeUIToolingPreview)
+    debugImplementation(libs.composeUITooling)
     implementation project(path: ':core:network')
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidxJunit)
