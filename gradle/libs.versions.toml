@@ -22,4 +22,5 @@ composeUITooling = { module = "androidx.compose.ui:ui-tooling" }
 composeUIToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 composeUITestJunit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 composeUITestManifest = { module = "androidx.compose.ui:ui-test-manifest" }
-activityCompose = { module = "androidx.activity:activity-compose" }
+activityCompose = { module = "androidx.activity:activity-compose", version = "1.6.1" }
+viewmodelCompose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "2.5.1" }

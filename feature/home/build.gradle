@@ -4,11 +4,25 @@ plugins {
 
 android {
     namespace 'com.example.home'
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.2"
+    }
 }
 
 dependencies {
     implementation(libs.coreKtx)
     implementation(libs.appcompat)
+    implementation(platform(libs.composeBom))
+    implementation(libs.composeMaterial)
+    implementation(libs.composeUIToolingPreview)
+    implementation(libs.activityCompose)
+    implementation(libs.viewmodelCompose)
+    debugImplementation(libs.composeUITooling)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidxJunit)
     androidTestImplementation(libs.espressoCore)
