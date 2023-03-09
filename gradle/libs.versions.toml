@@ -1,6 +1,7 @@
 [versions]
 activity = "1.6.1"
 lifecycleViewModel = "2.5.1"
+hilt = "2.44.2"
 
 [libraries]
 coreKtx = { module = "androidx.core:core-ktx", version = "1.9.0" }
@@ -10,8 +11,8 @@ material = { module = "com.google.android.material:material", version = "1.8.0" 
 junit = { module = "junit:junit", version = "4.13.2" }
 androidxJunit = { module = "androidx.test.ext:junit", version = "1.1.5" }
 espressoCore = { module = "androidx.test.espresso:espresso-core", version = "3.5.1" }
-hiltAndroid = { module = "com.google.dagger:hilt-android", version = "2.44.2" }
-hiltCompiler = { module = "com.google.dagger:hilt-compiler", version = "2.44.2" }
+hiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hiltCompiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version = "2.9.0" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version = "4.10.0" }
 kotlinSerializationConverter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version = "0.8.0" }
