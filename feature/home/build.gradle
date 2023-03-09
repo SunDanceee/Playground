@@ -21,7 +21,7 @@ dependencies {
     implementation(libs.composeMaterial)
     implementation(libs.composeUIToolingPreview)
     implementation(libs.activityCompose)
-    implementation(libs.viewmodelCompose)
+    implementation(libs.lifecycleViewModelCompose)
     debugImplementation(libs.composeUITooling)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidxJunit)
