@@ -1,7 +1,6 @@
 plugins {
-    id 'library-conventions'
-    id 'com.google.dagger.hilt.android'
-    id 'kotlin-kapt'
+    id 'com.android.library'
+    id 'module-conventions'
 }
 
 android {
@@ -9,14 +8,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.coreKtx)
     implementation(libs.retrofit)
     implementation(libs.okhttp)
     implementation(libs.kotlinSerializationConverter)
     implementation(libs.kotlinSerializationJson)
-    implementation(libs.hiltAndroid)
-    kapt(libs.hiltCompiler)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidxJunit)
-    androidTestImplementation(libs.espressoCore)
 }
