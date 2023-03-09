@@ -13,8 +13,8 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':feature:home')
-    implementation project(path: ':core:network')
+    implementation(projects.feature.home)
+    implementation(projects.core.network)
     implementation(libs.constraintLayout)
     implementation(libs.material)
     implementation(libs.activityKtx)
