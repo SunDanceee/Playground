@@ -29,6 +29,8 @@ object NetworkModule {
             }).build()
     }
 
+    private val json = Json { ignoreUnknownKeys = true }
+
     @Provides
     fun provideRetrofit(
         okHttpClient: OkHttpClient
@@ -36,7 +38,7 @@ object NetworkModule {
         val contentType = "application/json".toMediaType()
         return Retrofit.Builder()
             .baseUrl("https://www.wanandroid.com")
-            .addConverterFactory(Json.asConverterFactory(contentType))
+            .addConverterFactory(json.asConverterFactory(contentType))
             .client(okHttpClient)
             .build()
     }

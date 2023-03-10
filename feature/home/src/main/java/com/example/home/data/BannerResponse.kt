@@ -1,4 +1,5 @@
 package com.example.home.data
+
 import kotlinx.serialization.Serializable
 
 import kotlinx.serialization.SerialName
