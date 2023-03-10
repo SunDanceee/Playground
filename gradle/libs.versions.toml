@@ -30,3 +30,4 @@ composeUIToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 composeUITestJunit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 composeUITestManifest = { module = "androidx.compose.ui:ui-test-manifest" }
 navigationCompose = { module = "androidx.navigation:navigation-compose", version = "2.5.3" }
+hiltNavigationCompose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.0.0" }

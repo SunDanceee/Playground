@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.dagger.hilt.android'
     id 'kotlin-kapt'
+    id 'org.jetbrains.kotlin.plugin.serialization'
 }
 
 android {
@@ -53,6 +54,10 @@ android {
         implementation(platform(libs.composeBom))
         implementation(libs.composeMaterial)
         implementation(libs.composeUIToolingPreview)
+        implementation(libs.kotlinSerializationJson)
+        implementation(libs.retrofit)
+        implementation(libs.navigationCompose)
+        implementation(libs.hiltNavigationCompose)
         debugImplementation(libs.composeUITooling)
         testImplementation(libs.junit)
         androidTestImplementation(libs.androidxJunit)
