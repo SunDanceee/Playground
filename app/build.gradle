@@ -15,8 +15,6 @@ android {
 dependencies {
     implementation(projects.feature.home)
     implementation(projects.core.network)
-    implementation(libs.constraintLayout)
-    implementation(libs.material)
     implementation(libs.activityKtx)
     implementation(libs.activityCompose)
     implementation(libs.navigationCompose)

@@ -6,8 +6,6 @@ hilt = "2.44.2"
 [libraries]
 coreKtx = { module = "androidx.core:core-ktx", version = "1.9.0" }
 appcompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }
-constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version = "2.1.4" }
-material = { module = "com.google.android.material:material", version = "1.8.0" }
 junit = { module = "junit:junit", version = "4.13.2" }
 androidxJunit = { module = "androidx.test.ext:junit", version = "1.1.5" }
 espressoCore = { module = "androidx.test.espresso:espresso-core", version = "3.5.1" }
