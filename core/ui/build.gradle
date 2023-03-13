@@ -1,0 +1,11 @@
+plugins {
+    id 'com.android.library'
+    id 'module-conventions'
+}
+
+android {
+    namespace 'com.example.ui'
+}
+
+dependencies {
+}
