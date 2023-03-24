@@ -1,6 +1,6 @@
 [versions]
-activity = "1.6.1"
-lifecycleViewModel = "2.5.1"
+activity = "1.7.0"
+lifecycleViewModel = "2.6.1"
 hilt = "2.44.2"
 
 [libraries]
@@ -20,8 +20,8 @@ lifecycleViewModelCompose = { module = "androidx.lifecycle:lifecycle-viewmodel-c
 coroutineAndroid = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.6.4" }
 activityKtx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
 activityCompose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
-fragmentKtx = { module = "androidx.fragment:fragment-ktx", version = "1.5.5" }
-composeBom = { module = "androidx.compose:compose-bom", version = "2023.01.00" }
+fragmentKtx = { module = "androidx.fragment:fragment-ktx", version = "1.5.6" }
+composeBom = { module = "androidx.compose:compose-bom", version = "2023.03.00" }
 composeMaterial = { module = "androidx.compose.material:material" }
 composeUITooling = { module = "androidx.compose.ui:ui-tooling" }
 composeUIToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
